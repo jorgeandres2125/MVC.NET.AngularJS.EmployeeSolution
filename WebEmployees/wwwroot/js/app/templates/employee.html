@@ -1,0 +1,45 @@
+﻿<div class="panel panel-default">
+    <div class="jumbotron">
+        <h1 class="display-4">List of Employees</h1>
+        <p class="lead">
+            Enter the employee's id you wish consult, single or many separated by ','
+        </p>
+        <div class="container">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for..." ng-model="txtSearch" ng-keypress="searchKeyPress($event)" ng-paste="handlePaste($event)">
+                <span class="input-group-btn">
+                    <button class="btn btn-search" type="button" ng-click="searchEmployees()">Search</button>
+                </span>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Contract Type</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Rol Description</th>
+                        <th scope="col">Hourly Salary</th>
+                        <th scope="col">Monthly Salary</th>
+                        <th scope="col">Annual Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="empl in employees" scope="row">
+                        <td>{{empl.id}}</td>
+                        <td>{{empl.name}}</td>
+                        <td>{{empl.contractTypeName}}</td>
+                        <td>{{empl.roleName}}</td>
+                        <td>{{empl.roleDescription}}</td>
+                        <td>{{empl.hourlySalary}}</td>
+                        <td>{{empl.monthlySalary}}</td>
+                        <td>{{empl.annualSalary}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

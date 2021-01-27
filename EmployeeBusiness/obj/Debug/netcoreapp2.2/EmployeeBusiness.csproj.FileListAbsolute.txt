@@ -1,0 +1,3 @@
+C:\MasGlobalPrueba\EmployeeSolution\EmployeeBusiness\obj\Debug\netcoreapp2.2\EmployeeBusiness.csprojAssemblyReference.cache
+C:\MasGlobalPrueba\EmployeeSolution\EmployeeBusiness\obj\Debug\netcoreapp2.2\EmployeeBusiness.AssemblyInfoInputs.cache
+C:\MasGlobalPrueba\EmployeeSolution\EmployeeBusiness\obj\Debug\netcoreapp2.2\EmployeeBusiness.AssemblyInfo.cs
